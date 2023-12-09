@@ -1,0 +1,131 @@
+/*
+black: #050A0E
+yellow: #FCEE09
+red: #FF003C
+cyan: #00F0FF
+white: #FAFAFA
+*/
+.top-container{
+    display: inline-flex;
+    flex-direction: column;
+    flex: 0 0 100;
+}
+.container > * {
+    flex-basis: 100px;
+  }
+.centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.topHeader{
+    color: red;
+    font-size: 60px;
+}
+.helloHeader{
+    background-color: #050A0E;
+    min-height: 500px;
+}
+.rounded-circle{
+    max-height: 300px;
+    margin-top: 50px;
+    border-radius: 50%;
+}
+.hello{
+    text-align: center;
+    color: #FF003C;
+}
+.bio{
+    margin-bottom: 65px;
+    font-size: 28px;
+    text-align: center;
+    color:#FCEE09
+}
+
+.resume{
+    background-color: #00F0FF;
+    min-height: 500px;
+}
+button.link { background:none; border:none; color: rgb(255, 0, 174);}
+.resumeButton{
+    font-size: 90px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.project{
+    background-color: #FCEE09;
+    min-height: 300px;
+}
+.projectHeader{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 0.4fr;
+    grid-column-gap: 1px;
+    grid-row-gap: 10px;
+    justify-items: center;
+}
+
+.aboutMe{
+    background-color: #FF003C;
+    min-height: 1000px;
+}
+.aboutMeContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 40px;
+    align-items: center;
+    }
+.aboutTEXT{
+    font-size: 35px;
+    text-align: left;
+}
+.aboutMeHeader { grid-area: 1 / 1 / 2 / 4; text-align: center; font-weight: bolder;color: #FAFAFA;}
+.boardGIF { grid-area: 2 / 1 / 3 / 2; margin: auto;}
+.gameGIF { grid-area: 3 / 1 / 4 / 2; margin: auto;}
+.photoGIF { grid-area: 4 / 1 / 5 / 2; margin: auto;}
+.familyGIF { grid-area: 5 / 1 / 6 / 2; margin: auto;}
+.boardTEXT { grid-area: 2 / 2 / 3 / 4; color: #FAFAFA;}
+.gameTEXT { grid-area: 3 / 2 / 4 / 4; color: #FAFAFA;}
+.photoTEXT { grid-area: 4 / 2 / 5 / 4; color: #FAFAFA;}
+.familyTEXT { grid-area: 5 / 2 / 6 / 4; color: #FAFAFA;}
+
+.contactMe{
+    background-color: #050A0E;
+    min-height: 500px;
+}
+
+.contactMe {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "information information information contactMePHOTO contactMePHOTO contactMePHOTO"
+      "github github github contactMePHOTO contactMePHOTO contactMePHOTO"
+      "linkedin linkedin linkedin contactMePHOTO contactMePHOTO contactMePHOTO"
+      "email email email contactMePHOTO contactMePHOTO contactMePHOTO"
+      "phone phone phone contactMePHOTO contactMePHOTO contactMePHOTO";
+      align-items: center;
+  }
+  
+  .contactMePHOTO { grid-area: contactMePHOTO; }
+  
+  .information { grid-area: information; color:#FAFAFA; font-size: 40px; margin-left: 40px; font-weight: bold;}
+  
+  .github { grid-area: github; color:#FAFAFA; font-size: 40px; margin-left: 40px;}
+  
+  .linkedin { grid-area: linkedin; color:#FAFAFA; font-size: 40px; margin-left: 40px;}
+  
+  .email { grid-area: email; color:#FAFAFA; font-size: 40px; margin-left: 40px;}
+  
+  .phone { grid-area: phone; color:#FAFAFA; font-size: 40px; margin-left: 40px;}
+  
